@@ -1,5 +1,5 @@
 module.exports = {
-	'extends': 'airbnb',
+	'extends': 'react-app',
 	'parser': 'babel-eslint',
 	'parserOptions': {
 		'ecmaVersion': 6,

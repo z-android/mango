@@ -35,8 +35,7 @@
 		"css-loader": "1.0.0",
 		"dotenv": "6.0.0",
 		"dotenv-expand": "4.2.0",
-		"eslint": "^4.19.1 || ^5.3.0",
-		"eslint-config-airbnb": "^17.1.0",
+		"eslint": "^5.3.0",
 		"eslint-config-react-app": "^3.0.5",
 		"eslint-loader": "2.1.1",
 		"eslint-plugin-flowtype": "2.50.1",
@@ -72,10 +71,7 @@
 		"workbox-webpack-plugin": "3.6.3"
 	},
 	"eslintConfig": {
-		"extends": "react-app",
-		"rules": {
-			"no-undef": "off"
-		}
+		"extends": "react-app"
 	},
 	"browserslist": [
 		">0.2%",

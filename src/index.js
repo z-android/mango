@@ -16,7 +16,7 @@ import AppModel from './AppModel'
  */
 const app = dva({})
 
-var h=1
+var h = 1
 
 //2.添加插件
 app.use({

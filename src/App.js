@@ -2,7 +2,14 @@ import React, { Component } from 'react'
 import logo from './logo.svg'
 import './App.css'
 
+import { getLifeHomePage } from './modules/life/services/LifeService'
+
 class App extends Component {
+
+  componentDidMount() {
+	getLifeHomePage()
+  }
+
   render() {
 	return (
 	  <div className="App">

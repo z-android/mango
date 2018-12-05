@@ -1,9 +1,9 @@
 import React from 'react'
-import './index.css'
-
 import dva from 'dva'
-import RouterConfig from './RouterConfig'
+import './App.css'
+import 'antd/dist/antd.css'
 import AppModel from './AppModel'
+import { RouterConfig } from './config/RouterConfig'
 
 /**
  * 1.初始化 创建应用
@@ -14,16 +14,14 @@ import AppModel from './AppModel'
  *   initialState,  应用初始化数据，优先级高于model中的state
  * }
  */
-const app = dva({})
-
-var h = 1
-
-//2.添加插件
-app.use({
-  onError: () => {
+const app = dva({
+  onError(error) {
 	console.log('应用层统一错误处理')
   },
 })
+
+//2.添加插件
+app.use({})
 
 //3.绑定数据模型Model
 app.model(AppModel)
@@ -34,17 +32,11 @@ app.router(RouterConfig)
 //5.启动应用
 app.start('#root')
 
-//
-//
-// import ReactDOM from 'react-dom'
-// import App from './App'
-// import * as serviceWorker from './serviceWorker'
-//
-// ReactDOM.render(<App/>, document.getElementById('root'))
-//
-// // If you want your app to work offline and load faster, you can change
-// // unregister() to register() below. Note this comes with some pitfalls.
-// // Learn more about service workers: http://bit.ly/CRA-PWA
-// serviceWorker.unregister()
+const dispatch = app._store.dispatch
+
+export { dispatch }
+
+
+
 
 

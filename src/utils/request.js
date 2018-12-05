@@ -1,18 +1,5 @@
 import fetch from 'dva/fetch'
-
-function parseJSON(response) {
-  return response.json()
-}
-
-function checkStatus(response) {
-  if (response.status >= 200 && response.status < 300) {
-    return response
-  }
-
-  const error = new Error(response.statusText)
-  error.response = response
-  throw error
-}
+import { RouterUtils } from '../mango-web'
 
 /**
  * Requests a URL, returning a promise.
@@ -21,46 +8,47 @@ function checkStatus(response) {
  * @param  {object} [options] The options we want to pass to "fetch"
  * @return {object}           An object containing either "data" or "err"
  */
-// export default function request(url, options) {
-//   return fetch(url, options)
-//     .then(checkStatus)
-//     .then(parseJSON)
-//     .then(data => ({data}))
-//     .catch(err => ({err}))
-// }
-
 async function request(url, options) {
   //发送请求获取响应
   const response = await fetch(url, options)
   //响应统一处理
-  checkStatus(response)
-  //解析返回数据
-  const data = await parseJSON(response)
-  //包装数据返回
-  return data
+  if (response.status == 200) {
+	//请求成功判断
+	const data = await response.json()
+	if (data.code === 0) {
+	  //请求数据成功
+	  console.log('请求成功：' + JSON.stringify(data))
+	  return data
+	} else {
+	  //请求数据失败
+	  console.log('响应失败：' + JSON.stringify(data))
+	}
+  } else {
+	//请求失败统一处理——异常界面跳转,响应失败的统一处理跳转到界面
+	RouterUtils.push('ErrorPage', {type: response.status})
+  }
 }
 
 async function requestPost(url, req, optionConfig) {
   let options = {
-    method: 'POST',
-    body: {
-      ...req,
-      ...optionConfig
-    }
+	method: 'POST',
+	body: {
+	  ...req,
+	  ...optionConfig
+	}
   }
   request(url, options)
 }
 
 async function requestGet(url, req, optionConfig) {
   let options = {
-    method: 'GET',
-    body: {
-      ...req,
-      ...optionConfig
-    }
+	method: 'GET',
+	body: {
+	  ...req,
+	  ...optionConfig
+	}
   }
   request(url, options)
 }
 
-
-export {request,requestGet,requestPost}
+export { request, requestGet, requestPost }

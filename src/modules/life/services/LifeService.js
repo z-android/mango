@@ -8,3 +8,4 @@ import { requestPost } from '../../../utils/request'
 export async function getLifeHomePage(req) {
   return requestPost('/api/life/getLifeHomePage', req)
 }
+

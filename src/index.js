@@ -1,7 +1,8 @@
 import React from 'react'
 import dva from 'dva'
-import './App.css'
 import 'antd/dist/antd.css'
+import 'ant-design-pro/dist/ant-design-pro.css';
+
 import AppModel from './AppModel'
 import { RouterConfig } from './config/RouterConfig'
 

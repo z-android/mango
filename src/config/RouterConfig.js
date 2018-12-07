@@ -4,6 +4,7 @@
 import React from 'react'
 import { Router, Route, Switch } from 'dva/router'
 
+
 // user 模块
 import { ModuleRouter as UserRouter } from '../modules/user'
 import IndexPage from '../layouts/IndexPage'
@@ -21,6 +22,7 @@ const RouterConfig = ({history, app}) => {
   listenRouter(history)
 
   return (
+
 	<Router history={history}>
 	  <Switch>
 

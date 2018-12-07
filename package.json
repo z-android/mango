@@ -16,6 +16,7 @@
 		]
 	},
 	"dependencies": {
+		"ant-design-pro": "^2.1.1",
 		"antd": "^3.10.9",
 		"dva": "^2.4.1",
 		"http-proxy-middleware": "^0.19.1",

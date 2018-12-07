@@ -6,3 +6,5 @@ const AppConfig = {
   navTheme: 'dark',  //nav menu主题
   primaryColor: '#1890FF', //应用主色
 }
+
+export default AppConfig

@@ -1,5 +1,6 @@
 import fetch from 'dva/fetch'
 import { RouterUtils } from '../mango-web'
+import { notification,message } from 'antd'
 
 /**
  * Requests a URL, returning a promise.
@@ -21,7 +22,8 @@ async function request(url, options) {
 	  return data
 	} else {
 	  //请求数据失败
-	  console.log('响应失败：' + JSON.stringify(data))
+	  // notification.error({message: '响应失败', description: data.ext.msg})
+	  message.error(data.ext.msg)
 	}
   } else {
 	//请求失败统一处理——异常界面跳转,响应失败的统一处理跳转到界面

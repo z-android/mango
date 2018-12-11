@@ -11,7 +11,7 @@ const config = {
   403: {
 	img: 'https://gw.alipayobjects.com/zos/rmsportal/wZcnGqRDyhPOEYFcZDnb.svg',
 	title: '403',
-	desc: AppStrings.desc_404,
+	desc: AppStrings.desc_403,
   },
   404: {
 	img: 'https://gw.alipayobjects.com/zos/rmsportal/KpnpchXsobRgLElEozzI.svg',

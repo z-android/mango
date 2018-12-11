@@ -7,8 +7,9 @@ import { Dimens } from '../mango-web'
 
 const Themes = {
   //颜色
-  //--背景色
-  primary_color: ColorPalette.orange.orange1,
+
+  //-----------Colors---------------
+  primary_color: ColorPalette.blue.blue1,
 
   //---背景色
   bg_color: ColorPalette.grey.grey1,

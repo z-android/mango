@@ -2,32 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d19cad1-0ef4-4572-8625-9ef68c3e0d0e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/ColorPalette.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/Theme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/user/pages/entry/UserEntryModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/user/pages/entry/UserEntryPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/user/pages/entry/components/LoginComponent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/user/pages/entry/components/RegisterComponent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/AuthorityUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layouts/HomePage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mango-web/package/loading/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mango-web/utils/MangoUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/dashboard/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/user/pages/entry/components/RegisterResultComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/user/services/UserService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/AppDimens.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/AppConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/AppConfig.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Theme.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config/RouterConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/RouterConfig.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/IndexPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/IndexPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mango-web/utils/ModelUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/mango-web/utils/ModelUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/ErrorPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/ErrorPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mango-web/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/mango-web/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mango-web/utils/ModelUtils.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/user/ModuleRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/user/ModuleRouter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/user/Strings.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/user/Strings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/user/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/user/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/user/pages/Login/LoginModel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/user/pages/Login/LoginPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/user/pages/Login/components/RegisterComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/user/pages/entry/UserEntryModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/user/pages/entry/UserEntryModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/user/pages/entry/UserEntryPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/user/pages/entry/UserEntryPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/user/pages/entry/components/LoginComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/user/pages/entry/components/LoginComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/user/pages/entry/components/RegisterComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/user/pages/entry/components/RegisterComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/user/services/LoginService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupProxy.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupProxy.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/request.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -92,30 +90,32 @@
           <entry key="project.closed" value="4" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="ESLintLanguageService" value="5" />
-          <entry key="TypeScriptServerServiceImpl" value="2" />
+          <entry key="ESLintLanguageService" value="7" />
+          <entry key="TypeScriptServerServiceImpl" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="README" value="19" />
           <entry key="css" value="4" />
-          <entry key="js" value="11042" />
-          <entry key="json" value="2" />
+          <entry key="js" value="16541" />
+          <entry key="json" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="4" />
-          <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="11042" />
+          <entry key="JSON" value="7" />
+          <entry key="JavaScript" value="16541" />
           <entry key="PLAIN_TEXT" value="19" />
         </counts>
       </usages-collector>
@@ -125,12 +125,12 @@
           <entry key="css" value="3" />
           <entry key="html" value="1" />
           <entry key="ico" value="1" />
-          <entry key="js" value="103" />
-          <entry key="json" value="5" />
+          <entry key="js" value="169" />
+          <entry key="json" value="10" />
           <entry key="less" value="3" />
           <entry key="map" value="1" />
           <entry key="svg" value="3" />
-          <entry key="ts" value="7" />
+          <entry key="ts" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -138,75 +138,113 @@
           <entry key="CSS" value="3" />
           <entry key="HTML" value="1" />
           <entry key="Image" value="1" />
-          <entry key="JSON" value="5" />
-          <entry key="JavaScript" value="103" />
+          <entry key="JSON" value="10" />
+          <entry key="JavaScript" value="169" />
           <entry key="Less" value="3" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="SVG" value="3" />
           <entry key="SourceMap" value="1" />
-          <entry key="TypeScript" value="7" />
+          <entry key="TypeScript" value="10" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/modules/user/Strings.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/dva/index.d.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="142">
+              <caret line="86" column="2" selection-start-line="86" selection-start-column="2" selection-end-line="86" selection-end-column="2" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modules/user/pages/entry/components/RegisterComponent.js">
+        <entry file="file://$PROJECT_DIR$/node_modules/dva/src/dynamic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+            <state relative-caret-position="270">
+              <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mango-web/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="79">
+              <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
               <folding>
-                <element signature="e#113#153#0" expanded="true" />
+                <element signature="e#51#78#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/mango-web/utils/MangoUtils.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+              <folding>
+                <element signature="e#44#69#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/antd/lib/form/Form.d.ts">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="138" column="11" selection-start-line="138" selection-start-column="11" selection-end-line="138" selection-end-column="11" />
+            <state relative-caret-position="195">
+              <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package-lock.json">
+        <entry file="file://$PROJECT_DIR$/node_modules/dva/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="9762" column="7" lean-forward="true" selection-start-line="9762" selection-start-column="7" selection-end-line="9762" selection-end-column="7" />
+            <state relative-caret-position="68">
+              <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/antd/lib/form/constants.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/antd/lib/form/Form.js">
+        <entry file="file://$PROJECT_DIR$/node_modules/dva/fetch.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="120" column="31" selection-start-line="120" selection-start-column="31" selection-end-line="120" selection-end-column="31" />
+            <state relative-caret-position="30">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/antd/lib/form/FormItem.js">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/node_modules/dva/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="30" selection-start-column="30" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/dva/lib/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -220,41 +258,43 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>history</find>
-      <find>ModelUtils</find>
-      <find>dxToDd</find>
-      <find>Dimens</find>
-      <find>zhongzihuan</find>
-      <find>mango_web_zzh</find>
       <find>error</find>
-      <find>var</find>
-      <find>RouterUtils</find>
-      <find>sentinelStar</find>
-      <find>babel-plugin-import</find>
-      <find>sentinelStart</find>
-      <find>this.props.</find>
-      <find>Wrong mobile number format!</find>
-      <find>Please enter mobile number!</find>
-      <find>this.state.</find>
-      <find>type</find>
-      <find>addTab</find>
-      <find>changeAutoLogin</find>
+      <find>help</find>
+      <find>popover</find>
       <find>login</find>
-      <find>hello</find>
-      <find>ColorPalette</find>
-      <find>tv_desc</find>
-      <find>grey2</find>
-      <find>onSubmit</find>
       <find>onTabChange</find>
-      <find>title</find>
-      <find>mail</find>
-      <find>isemail</find>
-      <find>getFieldDecorator</find>
+      <find>onSubmit</find>
+      <find>showFragmentId</find>
+      <find>应用层统一错误处理</find>
+      <find>onTab</find>
+      <find>onTestApi</find>
+      <find>onRegisterSubmit</find>
+      <find>testApi</find>
+      <find>registry</find>
+      <find>onChangeFragment</find>
+      <find>count</find>
+      <find>checkPassword</find>
+      <find>callback</find>
+      <find>visible</find>
+      <find>onSubmitRsp</find>
+      <find>pure</find>
+      <find>ModelUtils</find>
+      <find>changePrefix</find>
+      <find>pureHandleRegistry</find>
+      <find>submi</find>
+      <find>onGetCaptcha</find>
+      <find>createLoading</find>
+      <find>loading</find>
+      <find>registryRsp</find>
+      <find>onRegistrySubmit</find>
+      <find>submitting</find>
     </findStrings>
     <replaceStrings>
       <replace>d</replace>
       <replace>handleDimens</replace>
       <replace>let</replace>
+      <replace>MangoUtils</replace>
+      <replace>style</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -270,15 +310,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/modules/user/pages/login.js" />
-        <option value="$PROJECT_DIR$/src/utils/ModelUtils.js" />
-        <option value="$PROJECT_DIR$/src/modules/user/pages/Login/LoginPage.js" />
-        <option value="$PROJECT_DIR$/src/modules/user/pages/Login/components/RegisterComponent.js" />
-        <option value="$PROJECT_DIR$/src/IndexPage.js" />
-        <option value="$PROJECT_DIR$/src/layouts/Error.js" />
-        <option value="$PROJECT_DIR$/src/modules/user/pages/Login/LoginModel.js" />
-        <option value="$PROJECT_DIR$/src/setupProxy.js" />
-        <option value="$PROJECT_DIR$/src/layouts/Error/ErrorPage.js" />
         <option value="$PROJECT_DIR$/src/layouts/Exception/ExceptionPage.js" />
         <option value="$PROJECT_DIR$/src/layouts/404.js" />
         <option value="$PROJECT_DIR$/src/assets/Strings.js" />
@@ -293,34 +324,43 @@
         <option value="$PROJECT_DIR$/mango-web/MangoImport.js" />
         <option value="$PROJECT_DIR$/src/utils/RequestUtils.js" />
         <option value="$PROJECT_DIR$/src/utils/RouterUtils.js" />
-        <option value="$PROJECT_DIR$/src/mango-web/index.js" />
-        <option value="$PROJECT_DIR$/src/layouts/ErrorPage.js" />
-        <option value="$PROJECT_DIR$/src/mango-web/utils/RouterUtils.js" />
-        <option value="$PROJECT_DIR$/src/utils/request.js" />
         <option value="$PROJECT_DIR$/src/config/AppConfig.js" />
         <option value="$PROJECT_DIR$/src/utils/AuthorityUtils.js" />
         <option value="$PROJECT_DIR$/src/modules/user/index.js" />
         <option value="$PROJECT_DIR$/src/modules/user/pages/register/RegisterPage.js" />
         <option value="$PROJECT_DIR$/src/modules/user/pages/register/pages/RegisterPage.js" />
         <option value="$PROJECT_DIR$/src/layouts/IndexPage.js" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/config/RouterConfig.js" />
-        <option value="$PROJECT_DIR$/src/mango-web/utils/ModelUtils.js" />
         <option value="$PROJECT_DIR$/src/modules/user/pages/login/LoginModel.js" />
         <option value="$PROJECT_DIR$/src/modules/user/pages/login/LoginPage.js" />
         <option value="$PROJECT_DIR$/src/modules/user/pages/entry/EntryPage.js" />
         <option value="$PROJECT_DIR$/src/modules/user/pages/login/UserEntryModel.js" />
         <option value="$PROJECT_DIR$/src/modules/user/ModuleRouter.js" />
-        <option value="$PROJECT_DIR$/src/modules/user/pages/entry/components/LoginComponent.js" />
         <option value="$PROJECT_DIR$/src/assets/Thems.js" />
         <option value="$PROJECT_DIR$/src/assets/Colors.js" />
         <option value="$PROJECT_DIR$/src/assets/ColorPalette.js" />
         <option value="$PROJECT_DIR$/src/assets/Theme.js" />
-        <option value="$PROJECT_DIR$/src/modules/user/pages/entry/UserEntryModel.js" />
+        <option value="$PROJECT_DIR$/src/modules/user/pages/entry/components/LoginComponent.js" />
+        <option value="$PROJECT_DIR$/src/setupProxy.js" />
+        <option value="$PROJECT_DIR$/src/layouts/ErrorPage.js" />
+        <option value="$PROJECT_DIR$/src/mango-web/utils/RouterUtils.js" />
+        <option value="$PROJECT_DIR$/src/modules/user/services/LoginService.js" />
+        <option value="$PROJECT_DIR$/src/mango-web/utils/ModelUtils.js" />
         <option value="$PROJECT_DIR$/src/modules/user/pages/entry/UserEntryPage.js" />
-        <option value="$PROJECT_DIR$/src/modules/user/pages/entry/components/RegisterComponent.js" />
         <option value="$PROJECT_DIR$/src/modules/user/Strings.js" />
+        <option value="$PROJECT_DIR$/src/mango-web/utils/MangoUtils.js" />
+        <option value="$PROJECT_DIR$/src/modules/user/services/UserService.js" />
+        <option value="$PROJECT_DIR$/src/utils/request.js" />
+        <option value="$PROJECT_DIR$/src/config/RouterConfig.js" />
+        <option value="$PROJECT_DIR$/src/modules/user/pages/entry/components/RegisterResultComponent.js" />
+        <option value="$PROJECT_DIR$/src/layouts/HomePage.js" />
+        <option value="$PROJECT_DIR$/src/modules/dashboard/index.js" />
+        <option value="$PROJECT_DIR$/src/mango-web/package/loading/src.js" />
+        <option value="$PROJECT_DIR$/src/mango-web/package/loading/src/index.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/modules/user/pages/entry/UserEntryModel.js" />
+        <option value="$PROJECT_DIR$/src/modules/user/pages/entry/components/RegisterComponent.js" />
+        <option value="$PROJECT_DIR$/src/mango-web/index.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
       </list>
     </option>
   </component>
@@ -334,15 +374,18 @@
   </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
+    <handled-path value="$PROJECT_DIR$/src/mango-web/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/package.json" />
+      <path value="$PROJECT_DIR$/src/mango-web/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
+    <option name="x" value="2" />
     <option name="y" value="23" />
-    <option name="width" value="1280" />
+    <option name="width" value="1217" />
     <option name="height" value="777" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -353,7 +396,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -369,46 +411,7 @@
             <path>
               <item name="mango-web-scaffold" type="b2602c69:ProjectViewProjectNode" />
               <item name="mango-web-scaffold" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="antd" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mango-web-scaffold" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mango-web-scaffold" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="antd" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mango-web-scaffold" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mango-web-scaffold" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="antd" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="form" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mango-web-scaffold" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mango-web-scaffold" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mango-web-scaffold" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mango-web-scaffold" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mango-web-scaffold" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mango-web-scaffold" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mango-web-scaffold" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mango-web-scaffold" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mango-web-scaffold" type="b2602c69:ProjectViewProjectNode" />
@@ -420,50 +423,18 @@
               <item name="mango-web-scaffold" type="b2602c69:ProjectViewProjectNode" />
               <item name="mango-web-scaffold" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mango-web-scaffold" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mango-web-scaffold" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mango-web-scaffold" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mango-web-scaffold" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mango-web-scaffold" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mango-web-scaffold" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="entry" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mango-web-scaffold" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mango-web-scaffold" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="entry" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="mango-web" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="req&#9;FILE&#9;file:///Users/zhongzihuan/workplace/coder/react-coder/mango/mango-web-scaffold/src/utils/request.js&#10;Error&#9;FILE&#9;file:///Users/zhongzihuan/workplace/coder/react-coder/mango/mango-web-scaffold/src/layouts/ErrorPage.js&#10;Model&#9;FILE&#9;file:///Users/zhongzihuan/workplace/coder/react-coder/mango/mango-web-scaffold/node_modules/mango-web/utils/ModelUtils.js&#10;Mod&#9;FILE&#9;file:///Users/zhongzihuan/workplace/coder/react-coder/mango/mango-web-scaffold/src/modules/user/ModuleRouter.js&#10;Modu&#9;FILE&#9;file:///Users/zhongzihuan/workplace/coder/react-coder/mango/mango-web-scaffold/src/modules/user/ModuleRouter.js" />
+    <property name="SearchEverywhereHistoryKey" value="Man&#9;FILE&#9;file:///Users/zhongzihuan/workplace/coder/react-coder/mango/mango-web-scaffold/src/mango-web/utils/MangoUtils.js&#10;Rou&#9;FILE&#9;file:///Users/zhongzihuan/workplace/coder/react-coder/mango/mango-web-scaffold/src/mango-web/utils/RouterUtils.js&#10;Route&#9;FILE&#9;file:///Users/zhongzihuan/workplace/coder/react-coder/mango/mango-web-scaffold/src/mango-web/utils/RouterUtils.js&#10;req&#9;FILE&#9;file:///Users/zhongzihuan/workplace/coder/react-coder/mango/mango-web-scaffold/src/utils/request.js&#10;Error&#9;FILE&#9;file:///Users/zhongzihuan/workplace/coder/react-coder/mango/mango-web-scaffold/src/layouts/ErrorPage.js&#10;Model&#9;FILE&#9;file:///Users/zhongzihuan/workplace/coder/react-coder/mango/mango-web-scaffold/node_modules/mango-web/utils/ModelUtils.js&#10;Mod&#9;FILE&#9;file:///Users/zhongzihuan/workplace/coder/react-coder/mango/mango-web-scaffold/src/modules/user/ModuleRouter.js&#10;Modu&#9;FILE&#9;file:///Users/zhongzihuan/workplace/coder/react-coder/mango/mango-web-scaffold/src/modules/user/ModuleRouter.js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -476,23 +447,23 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/assets" />
-      <recent name="$PROJECT_DIR$/src/layouts/Error" />
-      <recent name="$PROJECT_DIR$/src/utils" />
-      <recent name="$PROJECT_DIR$/src/modules/user" />
-      <recent name="$PROJECT_DIR$/src/components" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/modules/user/pages/entry" />
       <recent name="$PROJECT_DIR$/src/modules/user/pages/entry/components" />
       <recent name="$PROJECT_DIR$/src/modules/user/pages/register/pages" />
       <recent name="$PROJECT_DIR$/src/mango-web/utils" />
       <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/mango-web" />
+      <recent name="$PROJECT_DIR$/src/assets" />
+      <recent name="$PROJECT_DIR$/src/layouts/Error" />
+      <recent name="$PROJECT_DIR$/src/utils" />
+      <recent name="$PROJECT_DIR$/src/modules/user" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -523,12 +494,14 @@
       <workItem from="1543753711859" duration="14538000" />
       <workItem from="1543973053634" duration="12503000" />
       <workItem from="1544012267962" duration="543000" />
-      <workItem from="1544086451321" duration="24912000" />
+      <workItem from="1544086451321" duration="25661000" />
+      <workItem from="1544258969565" duration="35291000" />
+      <workItem from="1544420632595" duration="22133000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122725000" />
+    <option name="totallyTimeSpent" value="180898000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -540,10 +513,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="5" y="23" width="1230" height="777" extended-state="6" />
+    <frame x="2" y="23" width="1217" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2820513" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30936456" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -555,9 +528,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329927" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.329927" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32953367" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.22335766" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.47883213" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -576,175 +549,12 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/assets/ColorPalette.js</url>
           <line>11</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/modules/user/pages/login.js" />
-    <entry file="file://$PROJECT_DIR$/src/modules/user/services/LoginService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.test.js" />
-    <entry file="file://$PROJECT_DIR$/node_modules/redux/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="151" column="2" selection-start-line="151" selection-start-column="2" selection-end-line="151" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/dva/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="109" column="2" selection-start-line="109" selection-start-column="2" selection-end-line="109" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/classnames/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/logo.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Exception/ExceptionComponent.js" />
-    <entry file="file://$PROJECT_DIR$/src/components/Exception/index.less" />
-    <entry file="file://$PROJECT_DIR$/node_modules/mamacro/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/setupProxy.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mango-web/MangoImport.js" />
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="82" column="17" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/life/services/LifeService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mango-web/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/request.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="41" column="8" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/AppConfig.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/AuthorityUtils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mango-web/utils/RouterUtils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.css" />
-    <entry file="file://$PROJECT_DIR$/src/layouts/ErrorPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/rc-tabs/es/TabPane.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="51" column="48" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/user/pages/register/pages/RegisterPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/user/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/AppStrings.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/RouterConfig.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#19#44#0" expanded="true" />
-            <element signature="e#108#168#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/antd/lib/locale-provider/zh_CN.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/ant-design-pro/lib/Login/map.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="404">
@@ -762,148 +572,343 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/layouts/IndexPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/user/pages/login/components/RegisterComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/user/ModuleRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-          <folding>
-            <element signature="e#60#85#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/AppDimens.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/user/pages/login/components/RegisterComponent.js" />
+    <entry file="file://$PROJECT_DIR$/src/assets/AppDimens.js" />
     <entry file="file://$PROJECT_DIR$/src/assets/logo.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/ColorPalette.js">
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mango-web/assets/Dimens.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="28" column="2" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/Theme.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-          <folding>
-            <element signature="e#47#76#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/user/pages/entry/components/LoginComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
-          <folding>
-            <element signature="e#113#153#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/user/pages/entry/UserEntryModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="53" column="28" lean-forward="true" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
-          <folding>
-            <element signature="e#49#99#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mango-web/utils/ModelUtils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="41" column="2" selection-start-line="41" selection-start-column="2" selection-end-line="41" selection-end-column="2" />
-          <folding>
-            <element signature="e#49#74#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/user/pages/entry/UserEntryPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding>
-            <element signature="e#48#98#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="146430">
+          <caret line="9762" column="7" selection-start-line="9762" selection-start-column="7" selection-end-line="9762" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/antd/lib/form/constants.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
+    <entry file="file://$PROJECT_DIR$/node_modules/antd/lib/form/Form.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="9762" column="7" lean-forward="true" selection-start-line="9762" selection-start-column="7" selection-end-line="9762" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/antd/lib/form/Form.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="138" column="11" selection-start-line="138" selection-start-column="11" selection-end-line="138" selection-end-column="11" />
+        <state relative-caret-position="1800">
+          <caret line="120" column="31" selection-start-line="120" selection-start-column="31" selection-end-line="120" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/antd/lib/form/FormItem.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/antd/lib/form/Form.js">
+    <entry file="file://$PROJECT_DIR$/src/assets/ColorPalette.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="120" column="31" selection-start-line="120" selection-start-column="31" selection-end-line="120" selection-end-column="31" />
+        <state relative-caret-position="195">
+          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/user/pages/entry/components/RegisterComponent.js">
+    <entry file="file://$PROJECT_DIR$/src/assets/Theme.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+        <state relative-caret-position="150">
+          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/antd/lib/form/Form.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/tapable/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="276" column="4" selection-start-line="276" selection-start-column="4" selection-end-line="276" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/AppStrings.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mango-web/utils/ModelUtils.js" />
+    <entry file="file://$PROJECT_DIR$/build/static/js/main.44480956.chunk.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="361" selection-start-column="361" selection-end-column="361" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mango-web/assets/Dimens.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="2" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/setupProxy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mango-web/utils/RouterUtils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="21" column="4" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/layouts/ErrorPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
+          <folding>
+            <element signature="e#54#94#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/request.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/layouts/IndexPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/RouterConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+          <folding>
+            <element signature="e#19#44#0" expanded="true" />
+            <element signature="e#109#169#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/layouts/HomePage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding>
+            <element signature="e#45#85#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/dashboard/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/user/Strings.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/user/ModuleRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="20" column="61" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
+          <folding>
+            <element signature="e#60#85#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/user/pages/entry/UserEntryPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+          <folding>
+            <element signature="e#48#98#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/serviceWorker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/dva-loading/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/user/services/UserService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/user/pages/entry/components/LoginComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
           <folding>
             <element signature="e#113#153#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/user/Strings.js">
+    <entry file="file://$PROJECT_DIR$/src/mango-web/package/loading/src.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/dva-loading/lib/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="345">
+          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mango-web/package/loading/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/user/pages/entry/components/RegisterResultComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#53#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/user/pages/entry/UserEntryModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="158" column="22" selection-start-line="158" selection-start-column="6" selection-end-line="158" selection-end-column="22" />
+          <folding>
+            <element signature="e#49#99#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/user/pages/entry/components/RegisterComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/dva/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/dva/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/dva/fetch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mango-web/dist/dva.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1133">
+          <caret line="14235" column="5" lean-forward="true" selection-start-line="14235" selection-start-column="5" selection-end-line="14235" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/dva/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="30" selection-start-column="30" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/dva/lib/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/dva/src/dynamic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/dva/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="86" column="2" selection-start-line="86" selection-start-column="2" selection-end-line="86" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+          <folding>
+            <element signature="e#51#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mango-web/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mango-web/utils/MangoUtils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+          <folding>
+            <element signature="e#44#69#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

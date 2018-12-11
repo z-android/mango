@@ -4,7 +4,7 @@
  */
 import React from 'react'
 import { Route } from 'dva/router'
-import { ModelUtils } from '../../mango-web'
+import { MangoUtils } from '../../mango-web'
 
 import UserEntryPage from './pages/entry/UserEntryPage'
 import UserEntryModel from './pages/entry/UserEntryModel'
@@ -18,7 +18,7 @@ const ModuleRouter = (props) => {
 		exact
 		path={`${match.path + '/user-entry'}`}
 		component={UserEntryPage}
-		registerModel={ModelUtils.registerModel(app, UserEntryModel)}/>
+		registerModel={MangoUtils.registerModel(app, UserEntryModel)}/>
 
 	</div>
   )

@@ -4,10 +4,11 @@
 import React, { Component, Fragment } from 'react'
 import { connect } from 'dva'
 import LoginComponent from './components/LoginComponent'
-import { Dimens, ModelUtils } from '../../../../mango-web'
+import { Dimens, MangoUtils } from '../../../../mango-web'
 import RegisterComponent from './components/RegisterComponent'
 import Themes from '../../../../assets/Theme'
 import logo from '../../../../assets/logo.svg'
+import RegisterResultComponent from './components/RegisterResultComponent'
 
 @connect(({user_entry}) => ({user_entry}))
 class UserEntryPage extends Component {
@@ -29,6 +30,7 @@ class UserEntryPage extends Component {
 		fragment = <RegisterComponent/>
 		break
 	  case 3:
+		fragment = <RegisterResultComponent/>
 		break
 	}
 

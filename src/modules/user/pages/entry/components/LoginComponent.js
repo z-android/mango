@@ -12,7 +12,7 @@ import { connect } from 'dva'
 import Login from 'ant-design-pro/lib/Login'
 import { Alert, Checkbox } from 'antd'
 import Strings from '../../../Strings'
-import { ModelUtils } from '../../../../../mango-web'
+import { MangoUtils } from '../../../../../mango-web'
 
 const {Tab, UserName, Password, Mobile, Captcha, Submit} = Login
 
@@ -30,10 +30,10 @@ class LoginComponent extends Component {
 	  <Login
 		defaultActiveKey={type}
 		onTabChange={(key) => {
-		  ModelUtils.dispatch(this, 'user_entry/onTabChange', key)
+		  MangoUtils.dispatch(this, 'user_entry/onTabChange', {type: key})
 		}}
 		onSubmit={(err, values) => {
-		  ModelUtils.dispatch(this, 'user_entry/onSubmit', {err: err, values: values})
+		  MangoUtils.dispatch(this, 'user_entry/onLoginSubmit', {err: err, values: values})
 		}}
 	  >
 		<Tab key="tab1" tab={Strings.login_account}>
@@ -50,7 +50,7 @@ class LoginComponent extends Component {
 		</Tab>
 		<div>
 		  <Checkbox checked={autoLogin} onChange={(e) => {
-			ModelUtils.dispatch(this, 'user_entry/changeAutoLogin', e.target.checked)
+			MangoUtils.dispatch(this, 'user_entry/changeAutoLogin', e.target.checked)
 		  }}>
 			{Strings.keep_login}
 		  </Checkbox>
@@ -63,7 +63,7 @@ class LoginComponent extends Component {
 		  <span className="icon icon-taobao"/>
 		  <span className="icon icon-weibo"/>
 		  <a style={{float: 'right'}} onClick={() => {
-			ModelUtils.dispatch(this, 'user_entry/changeFragment', 2)
+			MangoUtils.dispatch(this, 'user_entry/changeFragment', {showFragmentId: 2})
 		  }}>{Strings.register}</a>
 		</div>
 	  </Login>

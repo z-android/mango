@@ -18,10 +18,11 @@
 	"dependencies": {
 		"ant-design-pro": "^2.1.1",
 		"antd": "^3.10.9",
-		"dva": "^2.4.1",
 		"http-proxy-middleware": "^0.19.1",
+		"nprogress": "^0.2.0",
 		"react": "^16.6.3",
-		"react-dom": "^16.6.3"
+		"react-dom": "^16.6.3",
+		"redux-logger": "^3.0.6"
 	},
 	"devDependencies": {
 		"@babel/core": "7.1.0",
@@ -135,5 +136,6 @@
 				}
 			]
 		]
-	}
+	},
+	"proxy": "http://127.0.0.1:7001/"
 }

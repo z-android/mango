@@ -4,12 +4,12 @@
 import React from 'react'
 import { Router, Route, Switch } from 'dva/router'
 
-
 // user 模块
 import { ModuleRouter as UserRouter } from '../modules/user'
 import IndexPage from '../layouts/IndexPage'
 import ErrorPage from '../layouts/ErrorPage'
 import { RouterUtils } from '../mango-web'
+import HomePage from '../layouts/HomePage'
 
 // import IndexPage from './IndexPage'
 
@@ -27,6 +27,7 @@ const RouterConfig = ({history, app}) => {
 	  <Switch>
 
 		<Route exact path="/" component={IndexPage}/>
+		<Route exact path="/HomePage" component={HomePage}/>
 
 		{/*用户模块*/}
 		<Route path="/user" render={(props) => (<UserRouter {...props} app={app}/>)}/>

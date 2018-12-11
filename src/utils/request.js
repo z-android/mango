@@ -1,6 +1,6 @@
 import fetch from 'dva/fetch'
 import { RouterUtils } from '../mango-web'
-import { notification,message } from 'antd'
+import { notification, message } from 'antd'
 
 /**
  * Requests a URL, returning a promise.
@@ -27,7 +27,7 @@ async function request(url, options) {
 	}
   } else {
 	//请求失败统一处理——异常界面跳转,响应失败的统一处理跳转到界面
-	RouterUtils.push('ErrorPage', {type: response.status})
+	RouterUtils.push('ErrorPage', {type: response.status}, true)
   }
 }
 
@@ -43,14 +43,12 @@ async function requestPost(url, req, optionConfig) {
 }
 
 async function requestGet(url, req, optionConfig) {
-  let options = {
-	method: 'GET',
-	body: {
-	  ...req,
-	  ...optionConfig
-	}
-  }
-  request(url, options)
+  return fetch(url, optionConfig)
+	.then((response) => response.json())
+	.then(data => {
+	  return data
+	})
+	.catch(err => ({err}))
 }
 
 export { request, requestGet, requestPost }

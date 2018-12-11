@@ -1,0 +1,58 @@
+/**
+ * Created by mangyan on 2018/12/9.
+ * 注册结果页
+ */
+import React, { Component } from 'react'
+import { connect } from 'dva'
+
+import { Button } from 'antd'
+import { Result } from 'ant-design-pro'
+import Strings from '../../../Strings'
+import { Dimens, RouterUtils } from '../../../../../mango-web'
+
+const actions = (
+  <div>
+	<Button size="large" type="primary">
+	  {Strings.view_mailbox}
+	</Button>
+	<Button size="large" style={{marginLeft: Dimens.d8}} onClick={()=>{
+	  RouterUtils.push('/HomePage')
+	}}>
+	  {Strings.back_home}
+	</Button>
+  </div>
+)
+
+@connect(({user_entry}) => ({user_entry}))
+class RegisterResultComponent extends Component {
+
+  render() {
+	const {account} = this.props.user_entry
+	return (
+	  <Result
+		style={styles.registerResult}
+		type="success"
+		title={
+		  <div style={styles.title}>
+			{Strings.register_result_account + account + Strings.register_result_ok}
+		  </div>
+		}
+		description={Strings.activation_email}
+		actions={actions}
+		style={{marginTop: 56}}
+	  />
+	)
+  }
+}
+
+const styles = {
+  registerResult: {},
+  title: {},
+  actions: {
+	width: '100px',
+	height: '10px',
+	backgroundColor: 'red'
+  },
+}
+
+export default RegisterResultComponent

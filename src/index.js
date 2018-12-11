@@ -1,12 +1,12 @@
 import React from 'react'
-// import dva from 'dva'
+import dva from 'dva'
 import 'antd/dist/antd.css'
 import 'ant-design-pro/dist/ant-design-pro.css'
 
 import AppModel from './AppModel'
 import { RouterConfig } from './config/RouterConfig'
 
-import { createLoading,mango } from './mango-web'
+import { createLoading } from './mango-web'
 import { createLogger } from 'redux-logger'
 
 /**
@@ -18,7 +18,7 @@ import { createLogger } from 'redux-logger'
  *   initialState,  应用初始化数据，优先级高于model中的state
  * }
  */
-const app = mango({
+const app = dva({
   onError(error) {
 	console.log('应用层统一错误处理')
   },

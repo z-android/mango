@@ -9,9 +9,9 @@
 import React, { Component } from 'react'
 import { connect } from 'dva'
 
-import { Form, Input, Button, Select, Row, Col, Popover, Progress } from 'antd'
+import { Form, Input, Button, Select, Row, Col, Popover, Progress, message } from 'antd'
 import Strings from '../../../Strings'
-import { Dimens, MangoUtils } from '../../../../../mango-web'
+import { Dimens, MangoUtils, RouterUtils } from '../../../../../mango-web'
 import Themes from '../../../../../assets/Theme'
 
 const FormItem = Form.Item
@@ -41,18 +41,24 @@ class RegisterComponent extends Component {
 
   componentDidUpdate() {
 	const {registryRsp} = this.props.user_entry
-	console.log('componentDidUpdate:' + JSON.stringify(this.props))
-	const {form} = this.props
+	const {form, submitting} = this.props
 	const account = form.getFieldValue('mail')
-	if (registryRsp && registryRsp.code == 1) {
-	  MangoUtils.dispatch(this, 'user_entry', 'pureChangeFragment', {account, showFragmentId: 3})
+	if (registryRsp) {
+	  if (registryRsp.code == 1) {
+		MangoUtils.dispatch(this, 'user_entry', 'pureChangeFragment', {account, showFragmentId: 3})
+	  } else {
+		console.log('====' + JSON.stringify(registryRsp))
+		if (!submitting) {
+		  message.error('请求异常')
+		}
+	  }
 	}
+
   }
 
   render() {
 	const {type, notice, autoLogin, count, visible, help, prefix} = this.props.user_entry
 	const {submitting} = this.props
-	console.log(JSON.stringify(this.props) + '=====' + submitting)
 	const {getFieldDecorator, validateFields} = this.props.form
 
 	return (
@@ -236,12 +242,6 @@ class RegisterComponent extends Component {
 		  </FormItem>
 
 		</Form>
-		<p style={styles.login}
-		   onClick={() => {
-			 MangoUtils.dispatch(this, 'user_entry', 'onRegistrySubmit', {...values, prefix})
-		   }}>
-		  {Strings.sign_in}
-		</p>
 	  </div>
 	)
   }

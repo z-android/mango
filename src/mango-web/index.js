@@ -9,5 +9,3 @@ export { default as RouterUtils } from './utils/RouterUtils'
 export { default as createLoading } from './package/loading/src'
 
 
-// export {default as mango} from 'dva'
-

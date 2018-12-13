@@ -157,7 +157,6 @@ export default {
 
 	//提交注册
 	* onRegistrySubmit({payload}, {call, put, select}) {
-	  yield call(MangoUtils.delay(3000))
 	  //组装信息，发送接口请求
 	  let values = payload.values
 	  let req = values

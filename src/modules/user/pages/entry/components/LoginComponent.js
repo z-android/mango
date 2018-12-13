@@ -22,6 +22,8 @@ class LoginComponent extends Component {
   // 构造
   constructor(props) {
 	super(props)
+
+
   }
 
   render() {

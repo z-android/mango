@@ -11,6 +11,8 @@ function handleDimens(dimens) {
 }
 
 const Dimens = {
+  fill_width: '100%',
+  fill_height: '100vh',
   d1: handleDimens(1),
   d2: handleDimens(2),
   d3: handleDimens(3),

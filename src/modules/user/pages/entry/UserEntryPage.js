@@ -4,7 +4,7 @@
 import React, { Component, Fragment } from 'react'
 import { connect } from 'dva'
 import LoginComponent from './components/LoginComponent'
-import { Dimens, MangoUtils } from '../../../../mango-web'
+import { Dimens } from '../../../../mango-web'
 import RegisterComponent from './components/RegisterComponent'
 import Themes from '../../../../assets/Theme'
 import logo from '../../../../assets/logo.svg'
@@ -62,15 +62,16 @@ const styles = {
   container: {
 	display: 'flex',
 	backgroundColor: Themes.bg_color_secondary,
-	height: '100vh',
-	flexDirection: 'column'
+	flexDirection: 'column',
+	width: Dimens.fill_width,
+	height: Dimens.fill_height,
   },
   img_bg: {
 	position: 'absolute',
 	left: 0,
 	top: Dimens.d110,
 	backgroundRepeat: 'no-repeat',
-	width: '100vh',
+	width: '100%',
   },
   img_logo: {
 	height: Dimens.d44,

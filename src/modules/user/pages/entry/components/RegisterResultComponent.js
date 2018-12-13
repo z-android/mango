@@ -5,17 +5,19 @@
 import React, { Component } from 'react'
 import { connect } from 'dva'
 
-import { Button } from 'antd'
+import { Button, message } from 'antd'
 import { Result } from 'ant-design-pro'
 import Strings from '../../../Strings'
 import { Dimens, RouterUtils } from '../../../../../mango-web'
 
 const actions = (
   <div>
-	<Button size="large" type="primary">
+	<Button size="large" type="primary" onClick={() => {
+	  message.info('暂时不支持')
+	}}>
 	  {Strings.view_mailbox}
 	</Button>
-	<Button size="large" style={{marginLeft: Dimens.d8}} onClick={()=>{
+	<Button size="large" style={{marginLeft: Dimens.d8}} onClick={() => {
 	  RouterUtils.push('/HomePage')
 	}}>
 	  {Strings.back_home}

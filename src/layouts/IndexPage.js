@@ -18,7 +18,7 @@ class IndexPage extends Component {
 	if (!AuthorityUtils.getToken()) {
 	  RouterUtils.push(RouterUser.login)
 	} else {
-
+	  RouterUtils.push('HomePage')
 	}
   }
 

@@ -9,6 +9,7 @@ import { Button, message } from 'antd'
 import { Result } from 'ant-design-pro'
 import Strings from '../../../Strings'
 import { Dimens, RouterUtils } from '../../../../../mango-web'
+import AuthorityUtils from '../../../../../utils/AuthorityUtils'
 
 const actions = (
   <div>
@@ -18,6 +19,7 @@ const actions = (
 	  {Strings.view_mailbox}
 	</Button>
 	<Button size="large" style={{marginLeft: Dimens.d8}} onClick={() => {
+	  AuthorityUtils.setToken('token')
 	  RouterUtils.push('/HomePage')
 	}}>
 	  {Strings.back_home}

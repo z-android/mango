@@ -8,6 +8,8 @@ import { RouterConfig } from './config/RouterConfig'
 
 import { createLoading } from './mango-web'
 import { createLogger } from 'redux-logger'
+import { persistStore, autoRehydrate } from 'redux-persist'
+import { asyncSessionStorage } from 'redux-persist/storages'
 
 /**
  * 1.初始化 创建应用
@@ -18,6 +20,8 @@ import { createLogger } from 'redux-logger'
  *   initialState,  应用初始化数据，优先级高于model中的state
  * }
  */
+
+
 const app = dva({
   onError(error) {
 	console.log('应用层统一错误处理')
@@ -37,8 +41,8 @@ const app = dva({
   //
   // },
 
-  //封装effect执行
-  // onEffect: createLoading(),
+  //封装effect执行，数据持久化处理
+  extraEnhancers: [autoRehydrate()]
 
 })
 
@@ -53,6 +57,10 @@ app.router(RouterConfig)
 
 //5.启动应用
 app.start('#root')
+
+const persitor = persistStore(app._store, {
+  storage: asyncSessionStorage,
+})
 
 const dispatch = app._store.dispatch
 

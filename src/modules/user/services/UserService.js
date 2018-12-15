@@ -12,6 +12,14 @@ export async function registry(req) {
   return requestGet('/api/user/registry', req)
 }
 
+/**
+ * 登录
+ * @returns {Promise<void>}
+ */
+export async function login(req) {
+  return requestGet('/api/user/login', req)
+}
+
 export async function testApi(req) {
   return requestGet('/api')
 }

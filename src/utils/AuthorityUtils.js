@@ -9,7 +9,7 @@ const AuthorityUtils = {
    * @returns {string}
    */
   getToken() {
-    return localStorage.getItem('antd-pro-authority')
+    return localStorage.getItem('token')
   },
 
   /**

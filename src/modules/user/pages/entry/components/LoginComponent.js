@@ -23,7 +23,6 @@ class LoginComponent extends Component {
   constructor(props) {
 	super(props)
 
-
   }
 
   render() {
@@ -32,10 +31,10 @@ class LoginComponent extends Component {
 	  <Login
 		defaultActiveKey={type}
 		onTabChange={(key) => {
-		  MangoUtils.dispatch(this, 'user_entry/onTabChange', {type: key})
+		  MangoUtils.dispatch(this, 'user_entry', 'pureChangeTab', {type: key})
 		}}
 		onSubmit={(err, values) => {
-		  MangoUtils.dispatch(this, 'user_entry/onLoginSubmit', {err: err, values: values})
+		  MangoUtils.dispatch(this, 'user_entry', 'onLogin', {err: err, values: values})
 		}}
 	  >
 		<Tab key="tab1" tab={Strings.login_account}>

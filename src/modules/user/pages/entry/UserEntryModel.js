@@ -3,7 +3,7 @@
  */
 import { MangoUtils } from '../../../../mango-web'
 import Strings from '../../Strings'
-import { registry } from '../../services/UserService'
+import { registry, login } from '../../services/UserService'
 
 export default {
   namespace: 'user_entry',
@@ -11,7 +11,7 @@ export default {
 	notice: '',
 	type: 'tab2',
 	autoLogin: true,
-	showFragmentId: 2,
+	showFragmentId: 1,
 	//注册
 	confirmDirty: false,
 	visible: false,
@@ -139,20 +139,31 @@ export default {
   effects: {
 	//提交登录
 	* onLoginSubmit({payload}, {call, put, select}) {
+	  //组装信息，发送接口请求
 	  let values = payload.values
+	  let req = values
 	  let err = payload.err
 	  const type = yield select(state => state.user_entry.type)
 	  console.log('提交获取的数据' + JSON.stringify(payload) + '===' + JSON.stringify(type))
 	  if (type === 'tab1') {
 		if (!err && (values.username !== 'admin' || values.password !== '888888')) {
-
 		  yield call(MangoUtils.delay(500))
+		  const rsp = yield call(registry, req)
 		  yield put({
 			type: 'pureLoginRsp',
 		  })
-
 		}
 	  }
+	},
+
+	//注释
+	* onLogin({payload}, {call, put, select}) {
+	  let req = payload.req
+	  const response = yield call(login, req)
+	  yield put({
+		type: '',
+		payload: {}
+	  })
 	},
 
 	//提交注册

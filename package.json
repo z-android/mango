@@ -19,9 +19,11 @@
 		"ant-design-pro": "^2.1.1",
 		"antd": "^3.11.2",
 		"dva": "^2.4.1",
+		"enquire-js": "^0.2.1",
 		"http-proxy-middleware": "^0.19.1",
 		"nprogress": "^0.2.0",
 		"react": "^16.6.3",
+		"react-document-title": "^2.0.3",
 		"react-dom": "^16.6.3",
 		"redux-logger": "^3.0.6",
 		"redux-persist": "^4.1.0"

@@ -28,7 +28,7 @@ const app = dva({
   },
 
   //action被dispatch时触发
-  onAction: createLogger(),
+  // onAction: createLogger(),
 
   //state改变时触发，用于同步state到localStorage，服务器端等
   onStateChange: (state) => {
@@ -42,7 +42,7 @@ const app = dva({
   // },
 
   //封装effect执行，数据持久化处理
-  extraEnhancers: [autoRehydrate()]
+  // extraEnhancers: [autoRehydrate()]
 
 })
 
@@ -58,9 +58,9 @@ app.router(RouterConfig)
 //5.启动应用
 app.start('#root')
 
-const persitor = persistStore(app._store, {
-  storage: asyncSessionStorage,
-})
+// const persitor = persistStore(app._store, {
+//   storage: asyncSessionStorage,
+// })
 
 const dispatch = app._store.dispatch
 

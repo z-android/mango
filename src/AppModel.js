@@ -6,11 +6,22 @@
  *
  */
 export default {
-  namespace: 'app-rn',
-  state: {
-    name:'APPModel',
-  },
-  reducers: {},
-  effects: {},
-  subscriptions: {}
-}
+	namespace: 'app',
+	state: {
+		name: 'APPModel',
+		//当前设备是否为移动端
+		isMobile: false,
+	},
+	reducers: {
+		//注释
+		pureUpdateScreen(state, action) {
+			const {mobile} = action.payload;
+			return {
+				...state,
+				isMobile: mobile
+			};
+		},
+	},
+	effects: {},
+	subscriptions: {}
+};

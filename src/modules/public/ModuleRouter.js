@@ -7,6 +7,7 @@ import { Route } from 'dva/router';
 import { MangoUtils } from '../../mango-web';
 import HomePage from './pages/home/HomePage';
 import UserModel from '../user/ModuleModel';
+import HomeModel from './pages/home/HomeModel';
 
 const ModuleRouter = (props) => {
 	// console.log("模块路由栈："+JSON.stringify(props))
@@ -20,12 +21,17 @@ const ModuleRouter = (props) => {
 				exact
 				path={`${match.path + '/home'}`}
 				component={HomePage}
+				registerModel={MangoUtils.registerModel(app, HomeModel)}
 			/>
 		</div>
 	);
 };
 
-export { ModuleRouter };
+const RouterPublic = {
+	home: '/public/home',
+};
+
+export { RouterPublic, ModuleRouter };
 
 
 

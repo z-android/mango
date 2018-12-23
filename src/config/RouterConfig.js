@@ -6,7 +6,7 @@ import { Router, Route, Switch } from 'dva/router';
 
 // user 模块
 import { ModuleRouter as UserRouter } from '../modules/user';
-import { ModuleRouter as PubRouter } from '../modules/pub';
+import { ModuleRouter as PublicRouter } from '../modules/public';
 import IndexPage from '../layouts/IndexPage';
 import ErrorPage from '../layouts/ErrorPage';
 import { RouterUtils } from '../mango-web';
@@ -32,7 +32,7 @@ const RouterConfig = ({history, app}) => {
 				<Route path="/user" render={(props) => (<UserRouter {...props} app={app}/>)}/>
 
 				{/*公共模块*/}
-				<Route path="/pub" render={(props) => (<PubRouter {...props} app={app}/>)}/>
+				<Route path="/public" render={(props) => (<PublicRouter {...props} app={app}/>)}/>
 
 				{/*/!*Demo2模块*!/*/}
 				{/*<Route path="/demo2" render={(props) => (<Demo2Router {...props} app={app}/>)}/>*/}

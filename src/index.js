@@ -62,6 +62,8 @@ app.start('#root')
 //   storage: asyncSessionStorage,
 // })
 
+
+
 const dispatch = app._store.dispatch
 
 export { dispatch }

@@ -11,9 +11,12 @@ export default {
 		name: 'APPModel',
 		//当前设备是否为移动端
 		isMobile: false,
+		//不同设备屏幕下的菜单变化
+		collapsed: false,
 	},
 	reducers: {
-		//注释
+
+		//更新当前设备屏幕类型
 		pureUpdateScreen(state, action) {
 			const {mobile} = action.payload;
 			return {
@@ -21,6 +24,24 @@ export default {
 				isMobile: mobile
 			};
 		},
+
+		//更新设备屏幕下的布局
+		pureChangeLayoutCollapsed(state, action) {
+			const {collapsed} = action.payload;
+			return {
+				...state,
+				collapsed: collapsed
+			};
+		},
+
+		//改变侧边栏状态
+		pureChangeSliderCollapsed(state, action) {
+			return {
+				...state,
+				collapsed: !state.collapsed
+			};
+		},
+
 	},
 	effects: {},
 	subscriptions: {}

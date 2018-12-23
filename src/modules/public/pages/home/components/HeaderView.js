@@ -13,6 +13,7 @@ import { HeaderSearch, NoticeIcon } from 'ant-design-pro';
 
 import { Dimens, MangoUtils } from '../../../../../mango-web';
 import Strings from '../../../Strings';
+import Themes from '../../../../../assets/Theme';
 
 const {Header} = Layout;
 
@@ -23,7 +24,7 @@ class HeaderView extends PureComponent {
 		const {collapsed} = this.props.app;
 		return (
 			<Header style={{
-				background: 'red',
+				background: Themes.bg_color_white,
 				padding: 0,
 				display: 'flex',
 				flexDirection: 'row',
@@ -35,9 +36,7 @@ class HeaderView extends PureComponent {
 					onClick={() => MangoUtils.dispatch(this, 'app', 'pureChangeSliderCollapsed')}
 				/>
 				{/*头部右侧导航*/}
-				<div style={{backgroundColor: 'blue', display: 'flex', justifyContent: 'center'}}>
-					{this.renderRight()}
-				</div>
+				{this.renderRight()}
 			</Header>
 		);
 
@@ -49,12 +48,13 @@ class HeaderView extends PureComponent {
 
 		const {onNoticeClear, onNoticeVisibleChange, fetchingNotices} = this.props.app;
 
-		let currentUser = {notifyCount: 1};
+		let currentUser = {notifyCount: 11};
 
 		return (
 			<div style={styles.menu_right}>
 				{/*顶部搜索框*/}
 				<HeaderSearch
+					style={styles.menu_right_menu}
 					placeholder={Strings.placeholder_search}
 					onSearch={value => {
 						console.log('input', value); // eslint-disable-line
@@ -70,7 +70,7 @@ class HeaderView extends PureComponent {
 						target="_blank"
 						href="https://pro.ant.design/docs/getting-started"
 						rel="noopener noreferrer"
-						className={styles.action}
+						style={styles.menu_right_menu}
 					>
 						<Icon type="question-circle-o"/>
 					</a>
@@ -78,7 +78,6 @@ class HeaderView extends PureComponent {
 
 				{/*通知菜单*/}
 				<NoticeIcon
-					className={styles.action}
 					count={currentUser.notifyCount}
 					onItemClick={(item, tabProps) => {
 						console.log(item, tabProps); // eslint-disable-line
@@ -118,20 +117,20 @@ class HeaderView extends PureComponent {
 
 				{/*个人中心——下拉菜单*/}
 				<Dropdown overlay={this.renderUserMenu()}>
-					<span className={`${styles.action} ${styles.account}`}>
+					<span style={{marginRight: Dimens.d24, marginLeft: Dimens.d24}}>
 					  <Avatar
 						  size="small"
-						  className={styles.avatar}
+						  style={styles.menu_right_avatar}
 						  src={currentUser.avatar}
 						  alt="avatar"
 					  />
-					  <span className={styles.name}>{currentUser.name}</span>
+					  <span className={styles.name}>{'芒言'}</span>
 					</span>
 				</Dropdown>
 
 				{/*个人中心——选择语言*/}
 				<Dropdown overlay={this.renderLangMenu()} placement="bottomRight">
-					<span className={`${styles.action} ${styles.account}`}>
+					<span style={styles.menu_right_menu}>
 					  <Icon
 						  type="global"
 						  title="语言"
@@ -151,7 +150,7 @@ class HeaderView extends PureComponent {
 	 */
 	renderLangMenu = () => {
 		return (
-			<Menu style={styles.menu_right} selectedKeys={[]} onClick={this.onMenuClick}>
+			<Menu style={styles.menu_dropdown} selectedKeys={[]} onClick={this.onMenuClick}>
 				<Menu.Item key="zh-CN">
 					  <span role="img" aria-label="简体中文">
 						🇨🇳
@@ -186,7 +185,7 @@ class HeaderView extends PureComponent {
 	 */
 	renderUserMenu = () => {
 		return (
-			<Menu style={styles.menu_right} selectedKeys={[]} onClick={this.onMenuClick}>
+			<Menu style={styles.menu_dropdown} selectedKeys={[]} onClick={this.onMenuClick}>
 				<Menu.Item key="userCenter">
 					<Icon type="user"/>
 					个人中心
@@ -265,6 +264,20 @@ const styles = {
 	menu_right: {
 		marginRight: Dimens.d16,
 	},
+	menu_right_menu: {
+		marginRight: Dimens.d24,
+	},
+	menu_right_avatar: {
+		marginTop: Dimens.d20,
+		marginRight: Dimens.d8,
+		marginBottom: Dimens.d20,
+		verticalAlign: 'top',
+		color: Themes.font_color
+	},
+	menu_dropdown: {
+		marginTop: Dimens.d24
+	},
+
 };
 
 export default HeaderView;

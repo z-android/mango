@@ -18,8 +18,10 @@ const Themes = {
 
 	//---字体颜色
 	font_color: ColorPalette.grey.grey6,
-	font_color_secondary: ColorPalette.grey.grey3,
+	font_color_secondary: ColorPalette.grey.grey6,
 	font_color_tip: ColorPalette.grey.grey5,
+
+	font_color_black: ColorPalette.black,
 
 	//---主要分割线
 	line_color: ColorPalette.grey.grey4,

@@ -184,13 +184,14 @@ class HeaderView extends PureComponent {
 	 * @returns {*}
 	 */
 	renderUserMenu = () => {
+		const {onMenuClick} = this.props;
 		return (
-			<Menu style={styles.menu_dropdown} selectedKeys={[]} onClick={this.onMenuClick}>
-				<Menu.Item key="userCenter">
+			<Menu style={styles.menu_dropdown} selectedKeys={[]} onClick={onMenuClick}>
+				<Menu.Item key="user_center">
 					<Icon type="user"/>
 					个人中心
 				</Menu.Item>
-				<Menu.Item key="userinfo">
+				<Menu.Item key="user_info">
 					<Icon type="setting"/>
 					个人设置
 				</Menu.Item>
@@ -245,10 +246,6 @@ class HeaderView extends PureComponent {
 				}
 			],
 		};
-	};
-
-	onMenuClick = () => {
-
 	};
 
 }

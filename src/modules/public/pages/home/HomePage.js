@@ -8,13 +8,16 @@ import React, { PureComponent } from 'react';
 import { connect } from 'dva';
 
 import DocumentTitle from 'react-document-title';
-import { Dimens, MangoUtils } from '../../../../mango-web';
 import { Layout, Menu, Icon } from 'antd';
+import Authorized from 'ant-design-pro/lib/Authorized';
+
+import { Dimens, MangoUtils, RouterUtils } from '../../../../mango-web';
 
 import { enquireScreen, unenquireScreen } from 'enquire-js';
 
 import SliderMenu from './components/SliderMenu';
 import HeaderView from './components/HeaderView';
+import Themes from '../../../../assets/Theme';
 
 const {Content} = Layout;
 
@@ -61,18 +64,36 @@ class HomePage extends PureComponent {
 					<SliderMenu/>
 					{/*顶部*/}
 					<Layout>
-						<HeaderView/>
+						<HeaderView
+							onMenuClick={this.onMenuClick}
+						/>
 						{/*内容区域*/}
 						<Content style={{
-							margin: '24px 16px', padding: 24, background: '#fff', minHeight: 280,
+							margin: Dimens.d24,
+							minHeight: 280,
 						}}>
-							Content
+
+							{this.props.children}
 						</Content>
 					</Layout>
 				</Layout>
 			</DocumentTitle>
 		);
 	}
+
+	onMenuClick = (event) => {
+		const {key} = event;
+		switch (key) {
+			case 'user_center':
+				RouterUtils.push('UserCenterPage');
+				break;
+			case 'user_info':
+				RouterUtils.push('UserInfoPage');
+				break;
+			case 'logout':
+				break;
+		}
+	};
 
 }
 

@@ -18,6 +18,7 @@ const ColorPalette = {
 		glod1: '#A29174'
 	},
 	white: '#fff',
+	black: '#333333',
 	grey: {
 		grey1: '#ECE9E6',
 		grey2: '#f0f2f5',
